@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
+import 'gradiant_button.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Container(
-            padding: EdgeInsets.all(40),
-            child: Text('Hello 1', style: TextStyle(fontSize: 35),),
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
-          ),
+  runApp(MaterialApp(
+    home: Scaffold(
+      body: Center(
+        child: Column(
+          children: [
+            GradiantButton(text: "hello 1", start: Colors.blue, end: Colors.red),
+            GradiantButton(text: "hello 2", start: Colors.blue, end: Colors.red),
+            GradiantButton(text: "hello 3", start: Colors.blue, end: Colors.red),
+          ],
         ),
       ),
-    )
-  );
+    ),
+  ));
 }
