@@ -5,7 +5,7 @@ class CustomCard extends StatelessWidget {
   final MaterialColor color;
   final int colorShade;
 
-  CustomCard({
+  const CustomCard({
     super.key,
     required this.text,
     required this.color,
